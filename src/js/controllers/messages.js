@@ -39,6 +39,26 @@ function MessagesCtrl() {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // So, in Angular's flavour of MV*, controllers are intended to primarily:
 // 1. Respond to user actions.
 // 2. Provide data to the view (occasionally referred to as the view-model).
