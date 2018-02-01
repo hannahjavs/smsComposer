@@ -1,0 +1,20 @@
+{
+  "name": "smsComposer",
+  "description": "smsComposer Angular 2-way data binding",
+  "main": "index.js",
+  "authors": [
+    "Hannah"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
