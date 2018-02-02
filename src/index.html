@@ -24,21 +24,22 @@
       <!-- We can then display the imtems values from the controller like this. This means we are working with data that's coming from our controller: -->
 
       <!-- Amount of messages that have been posted to the page (some including the fake seed data in the controller): -->
-      <h3>You have sent {{ Messages.items.length }} messages using the weFarm SMS Composer!</h3>
+      <h3>You have sent <li>{{ Messages.items.length }}</li> messages using the weFarm SMS Composer!</h3>
 
       <!-- This is the form area where the user can start to type their SMS, I have styled the height and width of the text box here instead of the CSS: -->
       <form ng-submit="Messages.addItem()">
-        <textarea type="text" placeholder="Write weFarm SMS here..." ng-model="Messages.newMessage.topic" style="width: 44rem; height: 5rem"></textarea>
+        <textarea type="text" placeholder="Write weFarm SMS here..." ng-model="Messages.newMessage.topic" style="width: 44rem; height: 3rem"></textarea>
 
         <!-- This is the submit button that will "send the SMS" and will be posted to the list as one of the messages sent/a topic: -->
         <input type="submit" name="" value="SEND SMS">
       </form>
 
       <!-- This counts the amount of characters that are being typed in the SMS: -->
-      <h2>Amount of Chars: {{ Messages.newMessage.topic.length}}</h2>
+      <h2>Amount of Chars: {{ Messages.newMessage.topic.length}} out of 160</h2>
 
       <!-- This shows a preview of the message being typed. It using limitTo 160 characters to be typed -->
-        <p ng-if="Messages.newMessage.topic.length > 0">Preview of SMS: {{ Messages.newMessage.topic | limitTo: 160 }} </p>
+        <h2>Preview of SMS:</h2>
+        <p ng-if="Messages.newMessage.topic.length > 0">{{ Messages.newMessage.topic | limitTo: 160 }}</p>
 
       <!-- This uses an ng-if to say that, if the newMessage topic if GREATER THAN 160 characters than move to the next line using a <br /> and then draw a horizontal line <hr /> and repeatedly does this -->
       <div ng-if="Messages.newMessage.topic.length > 160">

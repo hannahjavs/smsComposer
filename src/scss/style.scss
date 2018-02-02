@@ -16,36 +16,57 @@ body {
 h1 {
   font-family: 'Didact Gothic', sans-serif;
   letter-spacing: -2px;
-  font-size: 3.2rem;
+  font-size: 30px;
   text-shadow: 3px 0px 2px rgba(0,0,125,0.24), 0px 2px 5px rgba(255,255,255,0.7);
 }
 
-p {
-  color: #e17f60;
+h2 {
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 16px;
+  text-shadow: 3px 0px 2px rgba(0,0,125,0.24), 0px 2px 5px rgba(255,255,255,0.7);
+}
+
+h3 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 15px;
+}
+
+p {
+  word-wrap: break-word; // This will make words go onto the next line!
+  color: #5aad41;
+  font-size: 14px;
   background-color: #eff0ef;
   font-weight: 10;
+  text-decoration: none;
   padding: 10px 10px 10px 10px;
 }
 
+li {
+  list-style: none;
+  color: #5aad41;
+  font-size: 16px;
+  font-weight: 10;
+  padding: 10px 10px 10px 10px;
+}
 
 form, form input {
   font-size: 1rem;
 }
 
 textarea {
+  border: 5px solid green;
   font-size: 16px;
   background-color: #eff0ef;
-  color: #e17f60;
+  color: #26282c;
 }
 
 form input[type=text], form input[type=submit], form select {
   font-size: 1rem;
-  border: 1px solid #FFAF1E;
+  border: 5px solid green;
   box-shadow: 0px 2px 2px rgba(0,0,0,0.08);
   padding: 0.618em 1em;
   border-radius: 5px;
-  background: white;
+  background: #eff0ef;
   color: rgba(0,0,0,0.75);
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -57,13 +78,16 @@ form input[type=submit]{
   background-color: #5aad41;
 }
 
+// animates button slightly
 form input[type=submit]:hover{
   cursor: pointer;
   position: relative;
   top: -2px;
+  margin-top: 5px;
 }
 
 ul {
+  list-style: none;
   text-align: left;
   max-width: 300px;
   margin: 2rem auto;
